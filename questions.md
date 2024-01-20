@@ -6,12 +6,12 @@
 - [ ] Scope and closures
 - [ ] Context and Prototypes, Inheritence
 - [ ] Polyfills
+- [ ] Event loop 
 
 ## React
 - [ ] Virtual Dom
 - [ ] Reconcellation
 - [ ] Server components
-- [ ] 
 
 
 ## Network
