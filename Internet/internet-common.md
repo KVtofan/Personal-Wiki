@@ -3,7 +3,6 @@
 [Source](https://cs.fyi/guide/how-does-internet-work)
 
 ## Key Terms
-
 - **Domain names, DNS, HTTP, HTTPS, SSL/TLS, Firewall?**
 
 ## Devices and Providers
@@ -30,7 +29,7 @@
 
 - **TCP:** Responsible for ensuring reliable transmission of data. It breaks down data into packets, reassembles them at the destination, and handles error-checking and correction.
 - **IP:** Responsible for addressing and routing packets of data so that they can travel across networks and reach the correct destination. Each device connected to the internet has a unique IP address, which is used to identify it and facilitate data exchange. The number of addresses is determined by the amount of bits.
-    - **IPv4 addresses** are 32-bit (8 * 4), offering 4.3 billion addresses. Addresses are in decimal format(e.g., 192.168.1.1)
+    - **IPv4 addresses** are 32-bit (8 * 4), offering 4.3 billion addresses. Addresses are in decimal format(e.g., 192.168.1.1). Usually numbers in IP address represent: `Country/Network Region/Network Subnetwork Device`.
     - **IPv6 addresses** are 128-bit (8 * 16), offering a lot of addresses. Addresses are in hexadecimal format (e.g.,  2001:0db8:85a3:0000:0000:8a2e:0370:7334). This form is more compact, because 1 hexadecimal digit (0-F) can represent 4 bits. IPv6 is more secure and efficient.
 
 ## Other Key Concepts
@@ -40,3 +39,12 @@
 - **Connections:** A connection is established between two sockets when two devices want to communicate with each other.
 - **Data transfer:** Once a connection is established, data can be transferred between the applications running on each device. Data is typically transmitted in segments, with each segment containing a sequence number and other metadata to ensure reliable delivery.
 - **Latency:** The amount of time it takes for a packet of data to travel from its source to its destination. 
+
+## Long and Short pooling
+## Long and Short Pooling
+
+- **Long pooling:** client sends a request to the server and keeps the connection open until the server. This approach can result in blocking the server as it keeps the connection open until the server responds.
+
+- **Short pooling:** client sends periodic requests to the server to check for updates. The server responds immediately with the latest data, regardless of whether there are any updates or not. This approach can result in more frequent network traffic and higher server load compared to long pooling.
+
+Both long and short pooling are used in web applications to implement real-time communication and update mechanisms.
