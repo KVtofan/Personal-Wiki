@@ -35,4 +35,13 @@ Asymetric Encription different keys: Public and Private.
 
 Asymetric (Public key) cryptography is a key to all secure messaging in the internet including SSL and TLS. How does SSL/TLS work?
 
+## TOP 10 Vulnarabilities
 
+1) Injections, SQL injection
+2) Broken Authentication
+3) Cross-Site Scripting (XSS)
+4) Cross-Site Request Forgery (CSRF)
+5) CORS misconfiguration
+6) Stale libraries and components
+
+## HTTPS

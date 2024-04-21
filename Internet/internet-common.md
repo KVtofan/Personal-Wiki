@@ -41,10 +41,16 @@
 - **Latency:** The amount of time it takes for a packet of data to travel from its source to its destination. 
 
 ## Long and Short pooling
-## Long and Short Pooling
-
 - **Long pooling:** client sends a request to the server and keeps the connection open until the server. This approach can result in blocking the server as it keeps the connection open until the server responds.
 
 - **Short pooling:** client sends periodic requests to the server to check for updates. The server responds immediately with the latest data, regardless of whether there are any updates or not. This approach can result in more frequent network traffic and higher server load compared to long pooling.
 
 Both long and short pooling are used in web applications to implement real-time communication and update mechanisms.
+
+## OSI Model
+![OSI Model Deep](../resources/osi-modes-deep.png)
+![OSI Model 1](../resources/layers-of-the-osi-model-slide1.png)
+![OSI Model 2](../resources/layers-of-the-osi-model-slide2.png)
+
+
+
